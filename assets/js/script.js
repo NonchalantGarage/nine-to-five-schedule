@@ -6,34 +6,31 @@ var saveTasks = function(){
     localStorage.setItem("schedule", JSON.stringify(schedule));
   }
 
+// Display Current Date in Header s
+var currentDay = dayjs().format('MM/DD/YYYY')
+$("#currentDay").html("Today's Date : " + currentDay);
+
 
 // Current time using dayjs.
 var rightNow = dayjs().format("H")
 
-// set hours for each time block
+// Beginning hour of work day
 var startHour = dayjs().hour(9).format("H")
 
-// if curret time is before start of current time block, highlight row red
-// if current time is within time block , hightlight row yelow
-// if time is after the next time block start time, highlight row green 
-
+timeBlocks = []
 
 // set time block hours using dayjs
-$( "span" ).each(function() {
-    $( this).html(startHour)
-    for (var i =0; i<this.length;i++){
-        $( this).html(startHour[i]);    
-    }
-  });
+$("span").each(function() {
+  $(this).html(startHour)
 
-
-
-
-
-
-
+});
 
 console.log(rightNow)
 var test = ( startHour <= rightNow || false);
 
-console.log(startHour);
+console.log(test);
+
+
+// if curret time is before start of current time block, highlight row red
+// if current time is within time block , hightlight row yelow
+// if time is after the next time block start time, highlight row green 
