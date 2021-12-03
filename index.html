@@ -18,6 +18,9 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -36,4 +39,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>src="./assets/js/script.js"</script>
   </body>
+  <div class ="main-container px-5 ">
+    <div class="row h-75 ">
+      <div class="col border border-secondary rounded-left align-self-center">
+        <p>9:00</p>
+      </div>
+      <div class="col-10 border border-secondary">
+        <form>
+          <textarea class="form-control" id="textarea" rows="3"></textarea>
+        </form>
+      </div>
+      <div class="col border border-secondary rounded-right">
+        <button id="save" class="btn btn-block btn-add">
+          <span class="material-icons">save_alt </span> Save
+        </button>
+    </div>
+    
+  </div>
+    
 </html>
