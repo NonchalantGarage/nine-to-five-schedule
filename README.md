@@ -26,7 +26,7 @@ Future time blocks are highlight d green
 ```
 
 ## Screenshots 
-![Alt text](/screenshots/punchin-the-clock.png "Punchin the Clock")
+![Alt text](/assets/screenshots/punchin-the-clock.png "Punchin the Clock")
 
 ## Author
 Curtis Hong
