@@ -5,14 +5,13 @@ Nine-to-Five Work Schedule is an application built for those who partake in deep
 ## Installation
 
 Open the link in your web browser
-```bash
+
 https://nonchalantgarage.github.io/nine-to-five-schedule/
-```
+
 
 
 ## Usage
 
-```bash
 Open the application on your web browser
 
 Schedule your day
@@ -21,9 +20,8 @@ Current day is displayed on the header
 
 Past time blocks are highlighted gray
 Current time block is highlighted red
-Future time blocks are highlight d green
+Future time blocks are highlighted in green
 
-```
 
 ## Screenshots 
 ![Alt text](/assets/screenshots/punchin-the-clock.png "Punchin the Clock")
