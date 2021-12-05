@@ -12,15 +12,15 @@ https://nonchalantgarage.github.io/nine-to-five-schedule/
 
 ## Usage
 
-Open the application on your web browser
+* Open the application on your web browser
 
-Schedule your day
+* Schedule your day
 
-Current day is displayed on the header
+* Current day is displayed on the header
 
-Past time blocks are highlighted gray
-Current time block is highlighted red
-Future time blocks are highlighted in green
+* Past time blocks are highlighted gray
+* Current time block is highlighted red
+* Future time blocks are highlighted in green
 
 
 ## Screenshots 
