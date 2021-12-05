@@ -1,39 +1,27 @@
 
-
-//create local storage array
-
-//query select save button to push new text into local storage array
+//query select save button class to push new text into local storage array
 $(".saveBtn").on("click", function(){
     var timeBlockContent = $(this).siblings('.description').val();
     var time = $(this).parent().attr('id')
+
     localStorage.setItem(time, timeBlockContent);
   })
-
-
-
-// set innertext to be a .val for each htime block 
-
-
-// Element selector for parent <div>
 
 // Display Current Date in Header
 var currentDay = dayjs().format('MM/DD/YYYY')
 $("#currentDay").html("Today's Date : " + currentDay);
 
-
-// Current time using dayjs.
+// Current time using dayjs formatted by hour
 var rightNow = dayjs().format("H")
 
-// Beginning hour of work day
-var startHour = dayjs().hour(9).format("H")
 
+// loop through parent and and timeblock hour to set conditionals 
 // if curret time is before start of current time block, set css property past
 // if current time is within time block , set css property present
 // if time is after the next time block start time, set css property future
 for (var i = 9; i < 18; i++){
   var ParentEl = $("#" + i );
   var assessTime = $("#hour-" + i).html();
-console.log(ParentEl);
   if (parseInt(assessTime) < parseInt(rightNow)){
     ParentEl.addClass("past");
   } else if (parseInt(assessTime) === parseInt(rightNow)){
@@ -46,14 +34,14 @@ console.log(ParentEl);
   }
 
 }
-// set time block hours using dayjs
 
+// local storage get item by selecting parent div ID and text area class 
 $("#9 .description").val(localStorage.getItem('9'))  
 $("#10 .description").val(localStorage.getItem('10'))  
 $("#11 .description").val(localStorage.getItem('11'))  
-$("#9 .description").val(localStorage.getItem('9'))  
-$("#9 .description").val(localStorage.getItem('9'))  
-$("#9 .description").val(localStorage.getItem('9'))  
-$("#9 .description").val(localStorage.getItem('9'))  
-$("#9 .description").val(localStorage.getItem('9'))  
-$("#9 .description").val(localStorage.getItem('9'))  
+$("#12 .description").val(localStorage.getItem('12'))  
+$("#13 .description").val(localStorage.getItem('13'))  
+$("#14 .description").val(localStorage.getItem('14'))  
+$("#15 .description").val(localStorage.getItem('15'))  
+$("#16 .description").val(localStorage.getItem('16'))  
+$("#17 .description").val(localStorage.getItem('17'))  
